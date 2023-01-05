@@ -22,10 +22,13 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Node.js runtime on build
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
         with:
-          node-version: 16
+          fetch-depth: "0"
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+      - run: npm ci
 
       - uses: sameer-coder/optic-release-automation-action@main
         with:
