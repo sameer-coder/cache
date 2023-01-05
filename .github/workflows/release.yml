@@ -26,8 +26,8 @@ jobs:
         with:
           fetch-depth: "0"
       - uses: actions/setup-node@v3
-          with:
-            node-version: 16
+        with:
+          node-version: 16
       - uses: sameer-coder/optic-release-automation-action@main
         with:
           github-token: ${{ github.token }}
