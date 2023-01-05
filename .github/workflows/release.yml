@@ -26,7 +26,8 @@ jobs:
         with:
           fetch-depth: "0"
       - uses: actions/setup-node@v3
-      - run: npm i
+          with:
+            node-version: 16
 
       - uses: sameer-coder/optic-release-automation-action@main
         with:
