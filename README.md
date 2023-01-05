@@ -1,7 +1,7 @@
 # mercurius-cache
 
 Adds an in-process caching layer to Mercurius.
-Federation is fully supported.
+Federation is fully supported.sdfsdfsdf
 
 Based on preliminary testing, it is possible to achieve a significant
 throughput improvement at the expense of the freshness of the data.
